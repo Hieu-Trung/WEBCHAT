@@ -1,0 +1,617 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main-container{
+	float: left;
+}
+.main-container.users{
+	width: 25%;
+	height: 100vh;
+	border-right: 1px solid #cccccc;
+}
+.main-container.chat{
+	width: 75%;
+}
+.profile-container{
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+}
+.profile-user{
+	float: left;
+}
+.profile-user.photo{
+	width: 20%;
+}
+.profile-user.heading{
+	width: 40%;
+}
+.profile-user.setting{
+	width: 20%;
+}
+.profile-user.edit{
+	width: 20%;
+}
+.profile-user-image{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 10px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile-user-image img{
+	width: 100%;
+	height: 100%;
+}
+.profile-user-image span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 15px;
+	opacity: 0;
+}
+.profile-user-setting{
+	width: 35px;
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 50%;
+	background-color: #eeeeee;
+	overflow: hidden;
+}
+.profile-setting-image{
+	width: 20px;
+	height: 20px;
+	margin-left: 7px;
+	margin-top: 7px;
+}
+.profile-edit-image img{
+	width: 100%;
+	height: 100%;
+}
+.profile-setting-image img{
+	width: 100%;
+	height: 100%;
+}
+.profile-user-edit{
+	width: 35px;
+	height: 35px;
+	margin-top: 10px;
+	border-radius: 50%;
+	background-color: #eeeeee;
+	overflow: hidden;
+}
+.profile-edit-image{
+	width: 20px;
+	height: 20px;
+	margin-left: 7px;
+	margin-top: 7px;
+	position: relative;
+}
+.profile-edit-image img{
+	width: 100%;
+	height: 100%;
+}
+.profile-user p{
+	font-size: 25px;
+	line-height: 60px;
+}
+.user-container{
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.search-container{
+	width: 100%;
+	margin-top: 10px;
+	height: 50px;	
+}
+.search-container-inside{
+	border-radius: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+	background-color: #eeeeee;
+	overflow: hidden;
+}
+.search-user{
+	float: left;
+}
+.search-user.button{
+	width: 15%;
+}
+.search-user.text{
+	width: 85%;
+}
+.search-user button{
+	width: 100%;
+	font-size: 20px;
+	border: none;
+	color: #cccccc;
+	background-color: #eeeeee;
+	margin-top: 15px;
+}
+.search-user input[type=text]{
+	width: 90%;
+	font-size: 17px;
+	border: none;
+	color: #cccccc;
+	background-color: #eeeeee;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.user-main-container{
+	width: 100%;
+	margin-top: 10px;
+}
+.user-main-container:hover{
+	cursor: pointer;
+}
+.user-main-container-inside{
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 70px;
+	background-color: #eeeeee;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.user-main-inside{
+	float: left;
+}
+.user-main-inside.photo{
+	width: 25%;
+}
+.user-main-inside.text{
+	width: 75%;
+}
+.user-main-image{
+	width: 60px;
+	height: 60px;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-main-image img{
+	width: 100%;
+	height: 100%;
+}
+.user-main-name{
+	width: 100%;
+	margin-top: 10px;
+}
+.user-main-messenger{
+	width: 100%;
+	margin-top: 10px;
+}
+.user-last-messenger{
+	float: left;
+}
+.user-last-messenger.messenger{
+	width: 80%;
+}
+.user-last-messenger.date{
+	width: 20%;
+}
+.user-main-name p{
+	font-size: 20px;
+}
+.user-main-messenger p{
+	font-size: 16px;
+	color: #aaaaaa;
+}
+.main-navbar{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #cccccc;
+}
+.main-navbar-inside{
+	float: left;
+}
+.main-navbar-inside.photo{
+	width: 10%;
+}
+.main-navbar-inside.name{
+	width: 75%;
+}
+.main-navbar-inside.icon{
+	width: 5%;
+}
+.user-main-name p{
+	font-size: 20px;
+}
+.user-main-messenger p{
+	font-size: 16px;
+	color: #aaaaaa;
+}
+.navbar-image{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.navbar-image img{
+	width: 100%;
+	height: 100%;
+}
+.navbar-icon{
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.navbar-icon img{
+	width: 100%;
+	height: 100%;
+}
+.navbar-name p{
+	margin-top: 5px;
+	font-size: 20px;
+}
+.navbar-time p{
+	margin-top: 5px;
+	font-size: 16px;
+	color: #aaaaaa;
+}
+.users-chat-container{
+	width: 100%;
+	height: calc(100vh - 60px);
+}
+.users-chat-main-container{
+	float: left;
+}
+.users-chat-main-container.chat{
+	width: 70%;
+	height: calc(100vh - 60px);
+	border-right: 1px solid #cccccc;
+}
+.users-chat-main-container.profile{
+	width: 30%;
+}
+.chat-chat-container{
+	width: 100%;
+	height: calc(100vh - 120px);
+}
+.chat-bottom{
+	width: 100%;
+	height: 60px;
+}
+.chat-bottom-icon{
+	float: left;
+}
+.chat-bottom-icon.icon{
+	width: 5%;
+}
+.chat-bottom-icon.send{
+	width: 75%;
+}
+.chat-bottom-image{
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.chat-bottom-image img{
+	width: 100%;
+	height: 100%;
+}
+.chat-bottom-send{
+	width: 95%;
+	height: 50px;
+	margin: auto;
+	margin-top: 5px;
+	border-radius: 30px;
+	background-color: #eeeeee;
+}
+.chat-bottom-input{
+	float: left;
+}
+.chat-bottom-input.text{
+	width: 90%;
+}
+.chat-bottom-input.smile{
+	width: 10%;
+}
+.chat-bottom-input input[type=text]{
+	width: 95%;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: none;
+	background-color: #eeeeee;
+}
+.user-profilr-detail{
+	width: 100%;
+	height: 170px;
+	border-bottom: 1px solid #cccccc;
+}
+.user-profilr-image{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-profilr-image img{
+	width: 100%;
+	height: 100%;
+}
+.user-profilr-name p{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 10px;
+}
+.user-profilr-time p{
+	text-align: center;
+	font-size: 17px;
+	margin-top: 10px;
+	color: #aaaaaa;
+}
+.chat-right{
+	width: 50%;
+	padding: 5px;
+	float: right;
+}
+.chat-right-page{
+	float: right;
+}
+.chat-right-page.name{
+	max-width: 90%;
+}
+.chat-display-name{
+	background-color: #0084ff;
+	border-radius: 50px;
+	padding: 10px;
+	color: white;
+	display: inline-block;
+}
+.chat-display-image{
+	width: 10px;
+	height: 10px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.chat-display-image img{
+	width: 100%;
+	height: 100%;
+}
+.chat-left{
+	width: 50%;
+	padding: 5px;
+	float: left;
+}
+.chat-left-page{
+	float: left;
+}
+.chat-left-page.name{
+	max-width: 90%;
+}
+.chat-left-display-name{
+	background-color: #eeeeee;
+	border-radius: 50px;
+	padding: 10px;
+	color: black;
+	display: inline-block;
+}
+.chat-left-display-image{
+	width: 25px;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.chat-left-display-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-container{
+	width: 100%;
+}
+.option-heading{
+	width: 100%;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.option-name{
+	float: left;
+}
+.option-name.name{
+	width: 90%;
+}
+.option-name.icon{
+	width: 10%;
+}
+.option-heading-image{
+	width: 15px;
+	height: 15px;
+}
+.option-heading-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-name p{
+	margin-left: 10px;
+	color: #aaaaaa;
+}
+.option-search{
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.option-search-name{
+	float: left;
+}
+.option-search-name.name{
+	width: 90%;
+}
+.option-search-name.icon{
+	width: 10%;
+}
+.option-search-image{
+	width: 15px;
+	height: 15px;
+}
+.option-search-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-search-name p{
+	margin-left: 10px;
+	color: black;
+	font-size: 17px;
+}
+.option-edit{
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.option-edit-name{
+	float: left;
+}
+.option-edit-name.name{
+	width: 90%;
+}
+.option-edit-name.icon{
+	width: 10%;
+}
+.option-edit-image{
+	width: 15px;
+	height: 15px;
+}
+.option-edit-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-edit-name p{
+	margin-left: 10px;
+	color: black;
+	font-size: 17px;
+}
+.option-color{
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.option-color-name{
+	float: left;
+}
+.option-color-name.name{
+	width: 90%;
+}
+.option-color-name.icon{
+	width: 10%;
+}
+.option-color-image{
+	width: 15px;
+	height: 15px;
+}
+.option-color-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-color-name p{
+	margin-left: 10px;
+	color: black;
+	font-size: 17px;
+}
+.option-emoji{
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.option-emoji-name{
+	float: left;
+}
+.option-emoji-name.name{
+	width: 90%;
+}
+.option-emoji-name.icon{
+	width: 10%;
+}
+.option-emoji-image{
+	width: 15px;
+	height: 15px;
+}
+.option-emoji-image img{
+	width: 100%;
+	height: 100%;
+}
+.option-emoji-name p{
+	margin-left: 10px;
+	color: black;
+	font-size: 17px;
+}
+.setting-model{
+	width: 150px;
+	background-color: white;
+	margin-top: 60px;
+	position: absolute;
+	margin-left: 200px;
+	border: 1px solid #cccccc;
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	display: none;
+}
+.setting-model p:hover{
+	background-color: #cccccc;
+	cursor: pointer;
+}
+.setting-model-setting{
+	border-bottom: 1px solid #eeeeee;
+	padding: 5px;
+}
+.setting-model-setting p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.setting-model-active{
+	border-bottom: 1px solid #eeeeee;
+	padding: 5px;
+}
+.setting-model-active p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.setting-model-about{
+	border-bottom: 1px solid #eeeeee;
+	padding: 5px;
+}
+.setting-model-about p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.setting-model-help{
+	border-bottom: 1px solid #eeeeee;
+	padding: 5px;
+}
+.setting-model-help p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.setting-model-logout{
+	border-bottom: 1px solid #eeeeee;
+	padding: 5px;
+}
+.setting-model-logout p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
